@@ -14,7 +14,7 @@ EXT_IP_SECOND="192.168.101.254"
 
 f_linkChangeActions() {
         service network restart
-        /root/bin/firewall restart
+        service iptables restart
         service squid restart
         # OTHER ACTIONS HERE
 }
